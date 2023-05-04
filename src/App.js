@@ -5,6 +5,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './theme';
 import { GlobalStyles } from './global';
+import Header from './components/Header';
+import Home from './routes/Home'
+import MLB from './routes/MLB'
+import NFL from './routes/NFL'
+import NHL from './routes/NHL'
+import NBA from './routes/NBA'
+
 
 function App() {
     const [theme, setTheme] = useState('light')
@@ -22,6 +29,14 @@ function App() {
 
     return (
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+            <Header theme={theme} setTheme={setTheme} />
+            <Routes>
+                <Route path='/' element={ <Home /> } />
+                <Route path-='/mlb' element={ <MLB /> } />
+                <Route path-='/nfl' element={ <NFL /> } />
+                <Route path-='/nhl' element={ <NHL /> } />
+                <Route path-='/nba' element={ <NBA /> } />
+            </Routes>
 
         </ThemeProvider>
     );
