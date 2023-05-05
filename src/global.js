@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: all 0.25s linear;
   }
 
-  a, .bgbuttonSecondary, .nav-link, h1, .navbar-toggler-icon, ::placeholder, td {
+  a, .bgbuttonSecondary, .nav-link, h1, .navbar-toggler-icon, ::placeholder, td, th {
     color: ${({ theme }) => theme.text};
   }
 
