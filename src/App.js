@@ -12,6 +12,7 @@ import MLB from './routes/MLB';
 import NFL from './routes/NFL';
 import NHL from './routes/NHL';
 import NBA from './routes/NBA';
+import Footer from './components/Footer';
 import NoMatch from './routes/NoMatch';
 
 
@@ -44,6 +45,7 @@ function App() {
                 <Route path='/' element={ <Home /> } />
                 <Route path="*" element={<NoMatch /> } />
             </Routes>
+            <Footer theme={theme} setTheme={setTheme} />
             </>
 
         </ThemeProvider>
