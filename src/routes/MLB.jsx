@@ -10,7 +10,7 @@ const MLB = ({ games }) => {
             <Table hover>
                 <thead>
                     <tr className='border-bottom tableTheme'>
-                        <th>Time</th>
+                        <th className='d-none d-md-table-cell'>Time</th>
                         <th>Home</th>
                         <th>Fanduel Odds</th>
                         <th>No-Vig Odds</th>

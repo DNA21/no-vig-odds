@@ -84,19 +84,22 @@ const GameItem = ({game}) => {
         }
     }
 
+    homeNoVigOdds = Math.round(homeNoVigOdds)
+    awayNoVigOdds = Math.round(awayNoVigOdds)
+
     let date = new Date( Date.parse(game.commence_time))
 
     return (
         <>
         {(homeTeamOdds?.price)
         ?   (<tr>
-                <td>{date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}</td>
+                <td className='d-none d-md-table-cell'>{date.toLocaleTimeString([], {hour: '2-digit', minute: '2-digit'})}</td>
                 <td>{game.home_team}</td>
-                <td className="text-center">{homeTeamOdds?.price}</td>
-                <td className='text-center'>{Math.round(homeNoVigOdds)}</td>
+                <td className="text-center">{homeTeamOdds?.price > 0 ? '+' + homeTeamOdds?.price : homeTeamOdds?.price}</td>
+                <td className='text-center'>{homeNoVigOdds > 0 ? '+' + homeNoVigOdds : homeNoVigOdds}</td>
                 <td>vs</td>
-                <td className='text-center'>{Math.round(awayNoVigOdds)}</td>
-                <td className='text-center'>{awayTeamOdds?.price}</td>
+                <td className='text-center'>{awayNoVigOdds > 0 ? '+' + awayNoVigOdds : awayNoVigOdds}</td>
+                <td className='text-center'>{awayTeamOdds?.price > 0 ? '+' + awayTeamOdds?.price : awayTeamOdds?.price}</td>
                 <td>{game.away_team}</td>
             </tr>
         ) : (null)}
