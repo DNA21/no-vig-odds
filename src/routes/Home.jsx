@@ -10,7 +10,7 @@ const Home = () => {
                     Why Do I Need to Know the No-Vig Odds?
                 </h4>
                 <p>
-                    We find the no-vig odds, or the fair odds, to figure out the actual chances a team will win or lose.  It is what a price of a bet would be if the sportsbook didn't have a vigorish (i.e. their 'take').  This is only one tool to use when looking for exploitable lines.
+                    We find the no-vig odds, or the fair odds, to figure out the actual chances a team will win or lose.  It is what a price of a bet would be if the sportsbook didn't have a vigorish (i.e. their 'take').  This is only one tool of many to use to beat the books!
                 </p>
             </Alert>
             <div className='d-flex justify-content-center'>

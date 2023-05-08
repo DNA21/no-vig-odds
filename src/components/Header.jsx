@@ -24,7 +24,7 @@ const Header = (props) => {
         <Container className='px-0'>
             <Navbar className={`${(theme==='dark') ? 'navbar-dark' : 'navbar-light'} d-flex justify-content-between align-items-center shadow-lg rounded-4 mt-4 fw-bold bgSecondary`} expand='md' sticky='top'>
                 <NavLink to='/' className='text-link' onClick={() => setMenuOpen(false)}>
-                    <h1>No&nbsp;Vig&nbsp;Odds</h1>
+                    <h1 className='px-4'>No&nbsp;Vig&nbsp;Odds</h1>
                 </NavLink>
 
                 <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
