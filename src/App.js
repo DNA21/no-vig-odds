@@ -35,19 +35,18 @@ function App() {
     return (
         <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
             <>
-            <GlobalStyles />
-            <Header theme={theme} setTheme={setTheme} />
-            <Routes>
-                <Route path="mlb" element={<MLB games={games} /> } />
-                <Route path='nfl' element={ <NFL /> } />
-                <Route path='nhl' element={ <NHL /> } />
-                <Route path='nba' element={ <NBA /> } />
-                <Route path='/' element={ <Home /> } />
-                <Route path="*" element={<NoMatch /> } />
-            </Routes>
-            <Footer theme={theme} setTheme={setTheme} />
+                <GlobalStyles />
+                <Header theme={theme} setTheme={setTheme} />
+                <Routes>
+                    <Route path="mlb" element={<MLB games={games} /> } />
+                    <Route path='nfl' element={ <NFL /> } />
+                    <Route path='nhl' element={ <NHL /> } />
+                    <Route path='nba' element={ <NBA /> } />
+                    <Route path='/' element={ <Home /> } />
+                    <Route path="*" element={<NoMatch /> } />
+                </Routes>
+                <Footer theme={theme} setTheme={setTheme} />
             </>
-
         </ThemeProvider>
     );
 }
