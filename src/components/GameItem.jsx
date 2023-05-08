@@ -84,6 +84,13 @@ const GameItem = ({game}) => {
         }
     }
 
+    if (homeNoVigOdds < 0 && homeNoVigOdds > -100) {
+        homeNoVigOdds = (100 + homeNoVigOdds) + 100
+    }
+    if (awayNoVigOdds < 0 && awayNoVigOdds > -100) {
+        awayNoVigOdds = (100 + awayNoVigOdds) + 100
+    }
+
     homeNoVigOdds = Math.round(homeNoVigOdds)
     awayNoVigOdds = Math.round(awayNoVigOdds)
 
