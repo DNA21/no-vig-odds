@@ -20,7 +20,9 @@ function App() {
     const [theme, setTheme] = useState('light')
     const [games, setGames] = useState([])
 
-    const url = 'https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=980b2b89872e4cb9cc002b0442060d1e&regions=us&markets=h2h&dateFormat=iso&oddsFormat=american&bookmakers=fanduel'
+    const apiKey = process.env.REACT_APP_THE_ODDS_API_KEY
+
+    const url = `https://api.the-odds-api.com/v4/sports/baseball_mlb/odds?apiKey=${apiKey}&regions=us&markets=h2h&dateFormat=iso&oddsFormat=american&bookmakers=fanduel`
 
 
     useEffect(()=> {

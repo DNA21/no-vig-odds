@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel'
 
 const Home = () => {
     return (
-        <Container className='mt-4 bgSecondary rounded-4 pt-3'>
+        <Container className='mt-4 bgSecondary rounded-4 pt-4 pb-4'>
             <Alert className='mx-4' color='info'>
                 <h4 className='alert-heading'>
                     Why Do I Need to Know the No-Vig Odds?
@@ -14,7 +14,7 @@ const Home = () => {
                 </p>
             </Alert>
             <div className='d-flex justify-content-center'>
-            <Carousel style={{ width: 500 + 'px'}} />
+                <Carousel />
             </div>
         </Container>
     )

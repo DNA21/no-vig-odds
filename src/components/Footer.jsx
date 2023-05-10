@@ -42,7 +42,7 @@ const Footer = (props) => {
                             <Toggle theme={theme} toggleTheme={toggleTheme} />
                         </div>
                         <div className='py-2'>
-                            <p>Sign up for crypto news</p>
+                            <p>Sign up for Sport Betting Tips!</p>
                         </div>
                         <div className='w-75 py-2'>
                             <form>
@@ -63,7 +63,7 @@ const Footer = (props) => {
                 </div>
             </div>
 
-            <div className='pt-4'>
+            <div className='pt-4 pb-2'>
                 <p className='text-center'>Powered By No Vig Odds</p>
             </div>
         </Container>
